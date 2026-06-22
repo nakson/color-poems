@@ -1,9 +1,122 @@
+<<<<<<< HEAD
 # color-poems
 
 整理了 **63个万能调色美术公式**，每个颜色都包含 **主色Hex**、**适合搭配的配色Hex** 和 **氛围感描述**，涵盖莫兰迪、复古、少女、极简、赛博等多种风格，可直接用作配色灵感库。
 
 ---
 
+=======
+# Color Poems
+
+整理了 **63 个万能调色美术公式**，每个颜色包含 **主色 Hex**、**搭配色 Hex** 和 **氛围感描述**，涵盖莫兰迪、复古、少女、极简、赛博等多种风格。
+
+**在线预览：** https://nakson.github.io/color-poems/
+
+---
+
+## 功能
+
+- 63 张配色卡片，响应式网格布局（1 / 2 / 3 / 4 列）
+- 7 大分类筛选（粉红、橙黄、绿、蓝、紫、大地色、无彩色与荧光）
+- 全宽主色 Hero 区：色名、Hex、氛围描述叠在色块上，文字颜色随亮度自适应
+- 点击 Hex 或搭配色条复制色值
+- 白卡 / 黑卡背景切换
+- 海报展示区：优先加载图片，无图时自动回退为 CSS 渐变
+
+## 技术栈
+
+| 项     | 选择                                                                 |
+| ------ | -------------------------------------------------------------------- |
+| 构建   | Vite + React + TypeScript                                            |
+| UI     | MUI v6                                                               |
+| 字体   | Noto Sans SC / Noto Serif SC / JetBrains Mono（fontsource 本地加载） |
+| 路由   | HashRouter（适配 GitHub Pages）                                      |
+| 包管理 | Yarn                                                                 |
+| 部署   | gh-pages                                                             |
+
+## 项目结构
+
+```
+color-poems/
+├── index.html
+├── package.json
+├── vite.config.ts          # base: '/color-poems/'
+├── public/
+│   └── posters/            # 海报图片：{id}.webp 或 {id}.png
+└── src/
+    ├── App.tsx
+    ├── main.tsx
+    ├── theme.ts
+    ├── data/colors.ts      # 63 条结构化配色数据
+    ├── components/
+    │   ├── ColorCard.tsx
+    │   ├── ColorGrid.tsx
+    │   ├── HeroColorBlock.tsx
+    │   ├── PairingSwatches.tsx
+    │   ├── PosterArea.tsx
+    │   └── CopyHexButton.tsx
+    └── utils/
+        ├── colorContrast.ts
+        └── copyToClipboard.ts
+```
+
+## 本地开发
+
+```bash
+yarn install
+yarn dev
+```
+
+构建与预览：
+
+```bash
+yarn build
+yarn preview
+```
+
+## 部署到 GitHub Pages
+
+本项目是 React SPA，**不能把 `main` 分支源码直接作为 Pages 源**，需要先构建再发布静态文件。
+
+```bash
+yarn deploy
+```
+
+该命令会执行 `yarn build`，并将 `dist/` 推送到 **`gh-pages` 分支**。
+
+然后在 GitHub 仓库 **Settings → Pages** 中设置：
+
+| 配置项 | 值                        |
+| ------ | ------------------------- |
+| Source | Deploy from a branch      |
+| Branch | **`gh-pages`** / `(root)` |
+
+> 注意：若选择 `main` / `(root)`，页面会加载未编译的 `/src/main.tsx`，导致白屏。
+
+线上地址：`https://nakson.github.io/color-poems/`（HashRouter 路由为 `/#/`）
+
+## 海报图片
+
+将生成的海报放入 `public/posters/`，按颜色 id 命名：
+
+```
+public/posters/1.webp
+public/posters/2.webp
+...
+public/posters/63.webp
+```
+
+也支持 `.png`。未放置图片的卡片会自动显示由主色与搭配色生成的 CSS 渐变。
+
+## 数据维护
+
+配色数据存放在 [`src/data/colors.ts`](src/data/colors.ts)。修改下方配色内容后，需同步更新该文件（或重新从 README 解析生成）。
+
+---
+
+## 配色数据
+
+>>>>>>> 2a11c56 (update)
 ### 粉红 / 珊瑚 / 红色系
 
 **1. 浅粉 #FFB3BA**  
@@ -281,5 +394,8 @@
 **63. 青柠绿 #CCFF00**  
 适合搭配：`#FF00FF` `#000000` `#FFFFFF`  
 氛围感：酸性视觉与复古游戏机，狂野的几何图形迸发出超现实的冲击力。
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2a11c56 (update)
