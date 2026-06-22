@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-# color-poems
-
-整理了 **63个万能调色美术公式**，每个颜色都包含 **主色Hex**、**适合搭配的配色Hex** 和 **氛围感描述**，涵盖莫兰迪、复古、少女、极简、赛博等多种风格，可直接用作配色灵感库。
-
----
-
-=======
 # Color Poems
 
 整理了 **63 个万能调色美术公式**，每个颜色包含 **主色 Hex**、**搭配色 Hex** 和 **氛围感描述**，涵盖莫兰迪、复古、少女、极简、赛博等多种风格。
 
-**在线预览：** https://nakson.github.io/color-poems/
+**在线预览：** [https://nakson.github.io/color-poems/](https://nakson.github.io/color-poems/)
 
 ---
 
@@ -25,14 +17,16 @@
 
 ## 技术栈
 
-| 项     | 选择                                                                 |
-| ------ | -------------------------------------------------------------------- |
-| 构建   | Vite + React + TypeScript                                            |
-| UI     | MUI v6                                                               |
-| 字体   | Noto Sans SC / Noto Serif SC / JetBrains Mono（fontsource 本地加载） |
-| 路由   | HashRouter（适配 GitHub Pages）                                      |
-| 包管理 | Yarn                                                                 |
-| 部署   | gh-pages                                                             |
+
+| 项   | 选择                                                             |
+| --- | -------------------------------------------------------------- |
+| 构建  | Vite + React + TypeScript                                      |
+| UI  | MUI v6                                                         |
+| 字体  | Noto Sans SC / Noto Serif SC / JetBrains Mono（fontsource 本地加载） |
+| 路由  | HashRouter（适配 GitHub Pages）                                    |
+| 包管理 | Yarn                                                           |
+| 部署  | gh-pages                                                       |
+
 
 ## 项目结构
 
@@ -82,14 +76,16 @@ yarn preview
 yarn deploy
 ```
 
-该命令会执行 `yarn build`，并将 `dist/` 推送到 **`gh-pages` 分支**。
+该命令会执行 `yarn build`，并将 `dist/` 推送到 `**gh-pages` 分支**。
 
 然后在 GitHub 仓库 **Settings → Pages** 中设置：
 
-| 配置项 | 值                        |
+
+| 配置项    | 值                         |
 | ------ | ------------------------- |
 | Source | Deploy from a branch      |
-| Branch | **`gh-pages`** / `(root)` |
+| Branch | `**gh-pages`** / `(root)` |
+
 
 > 注意：若选择 `main` / `(root)`，页面会加载未编译的 `/src/main.tsx`，导致白屏。
 
@@ -110,13 +106,14 @@ public/posters/63.webp
 
 ## 数据维护
 
-配色数据存放在 [`src/data/colors.ts`](src/data/colors.ts)。修改下方配色内容后，需同步更新该文件（或重新从 README 解析生成）。
+配色数据存放在 `[src/data/colors.ts](src/data/colors.ts)`。修改下方配色内容后，需同步更新该文件（或重新从 README 解析生成）。
 
 ---
 
 ## 配色数据
 
->>>>>>> 2a11c56 (update)
+> > > > > > > 2a11c56 (update)
+
 ### 粉红 / 珊瑚 / 红色系
 
 **1. 浅粉 #FFB3BA**  
@@ -396,6 +393,7 @@ public/posters/63.webp
 氛围感：酸性视觉与复古游戏机，狂野的几何图形迸发出超现实的冲击力。
 <<<<<<< HEAD
 
-
 =======
->>>>>>> 2a11c56 (update)
+
+> > > > > > > 2a11c56 (update)
+
